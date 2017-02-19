@@ -1,41 +1,41 @@
---------------------------------------------------------------------------------------------------------------------------------------
-													Program 1: Bank app
-													Due: March 6, 2017
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+							Program 1: Bank app
+							Due: March 6, 2017
+------------------------------------------------------------------------------------------------------------------------------
 
 You are tasked with creating a Bank application. 
 
 Points applicable throughout the bank app:
-•	A user can have multiple accounts to manage money.
-•	User needs an admin’s authorization to deposit money.
-•	User needs an admin’s authorization to withdraw money if  the transaction amount is greater than $1000 from his/her account.
-•	User should be able to search through the list of users ( by name or email address) and add them as friends.
-•	User can transfer money between his/her accounts and to a friend’s account without permission from an admin.
-•	An admin has the authorization to approve or decline any pending transactions.
+â€¢	A user can have multiple accounts to manage money.
+â€¢	User needs an adminâ€™s authorization to deposit money.
+â€¢	User needs an adminâ€™s authorization to withdraw money if  the transaction amount is greater than $1000 from his/her account.
+â€¢	User should be able to search through the list of users ( by name or email address) and add them as friends.
+â€¢	User can transfer money between his/her accounts and to a friendâ€™s account without permission from an admin.
+â€¢	An admin has the authorization to approve or decline any pending transactions.
 
 There will be two types of users in the system:
-•	Admin
-•	User
+â€¢	Admin
+â€¢	User
 
---------------------------------------------------------------------------------------------------------------------------------------
-																Admins
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+							Admins
+------------------------------------------------------------------------------------------------------------------------------
 The system should have a preconfigured Admin, which cannot be deleted or modified by other admins.
 
 Any admin user will have the following attributes: email (unique for each admin), name and password.
 
 All admins can perform the following tasks:
-•	Log in with an email and password
-•	Edit her/his profile details
-•	Manage admins
+â€¢	Log in with an email and password
+â€¢	Edit her/his profile details
+â€¢	Manage admins
 	o	Create new admins
 	o	View the list of all the admins and their profile details (except password)
 	o	Delete admins (except herself/himself and the preconfigured Admin)
-•	Manage account
+â€¢	Manage account
 	o	Create an account for a user. An account will have the following attributes: Account Number (unique for each account, 9-digit number), status, balance
 		?	Possible values for the status attribute:
-			•	Active - all the transaction operations, deposit, withdraw, send and borrow are available.
-			•	Closed - All the transaction operations are unavailable.
+			â€¢	Active - all the transaction operations, deposit, withdraw, send and borrow are available.
+			â€¢	Closed - All the transaction operations are unavailable.
 	o	View the list of all the accounts. View the balance for the accounts
 	o	View the details of an account. Also, show the user who own the account.
 	o	Edit the details of an account
@@ -46,59 +46,61 @@ All admins can perform the following tasks:
 		?	a history of the pending transactions that are not canceled by user before approved or declined.
 		?	a history of the transactions that have been approved and declined.
 	o	Delete an account from the system
-•	Manage Users
+â€¢	Manage Users
 	o	View the list of all the users and their profile details (except password)
 	o	View the transaction history of a user 
 		?	a history of the pending transactions that did not canceled before approved or declined.
 		?	a history of the transactions that have been approved and declined.
 	o	Delete a user
 
---------------------------------------------------------------------------------------------------------------------------------------
-															Users
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+							Users
+------------------------------------------------------------------------------------------------------------------------------
 A user will have the following attributes: email (unique for each member), name and password.
 
 Anyone can sign up as a user using their email, name and password. After signup, she/he can do the following tasks:
-•	Log in with email and password
-•	Edit her/his profile details
-•	View the details of his/her accounts
-•	Request the admin to create bank accounts
-•	Search other users using email or name.
-•	Add other users as friend
+â€¢	Log in with email and password
+â€¢	Edit her/his profile details
+â€¢	View the details of his/her accounts
+â€¢	Request the admin to create bank accounts
+â€¢	Search other users using email or name.
+â€¢	Add other users as friend
 	o	A user can only transfer money to friends.
 	o	Users who are not friends are not allowed to transfer money between themselves.
-•	View the list of his friends.
-•	View the list of transactions with their details. For example, the amount, from which account to which, status, start date and effective date.
-•	Cancel a transaction request.
-•	View their own transaction history.
+â€¢	View the list of his friends.
+â€¢	View the list of transactions with their details. For example, the amount, from which account to which, status, start date and effective date.
+â€¢	Cancel a transaction request.
+â€¢	View their own transaction history.
 
---------------------------------------------------------------------------------------------------------------------------------------
-															Miscellaneous
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+							Miscellaneous
+------------------------------------------------------------------------------------------------------------------------------
 Testing
-•	Thoroughly test one model and one controller. Feel free to use any testing framework.
+â€¢	Thoroughly test one model and one controller. Feel free to use any testing framework.
 Deployment
 
 Please ensure that your deployment is always accessible. You can use the following
-•	Heroku or any similar PaaS (OpenShift etc) with free plans
-•	Amazon AWS
-•	NCSU VCL
+â€¢	Heroku or any similar PaaS (OpenShift etc) with free plans
+â€¢	Amazon AWS
+â€¢	NCSU VCL
 
 Bonus (Extra Credit)
 You can do any or all of the below for extra credit (each item would be an extra credit item).
 
-•	If a user has successfully completed a transaction(it maybe a deposit/withdraw or transfer between friends) the system should send a notification message(email) to them with the details(account number, amount and effective timestamp of a transaction of the transaction.
-•	User can send a borrow money request message to his/her friend. Once the friend approves this request, the transaction should be reflected to an account immediately
+â€¢	If a user has successfully completed a transaction(it maybe a deposit/withdraw or transfer between friends) the system should send a notification message(email) to them with the details(account number, amount and effective timestamp of a transaction of the transaction.
+â€¢	User can send a borrow money request message to his/her friend. Once the friend approves this request, the transaction should be reflected to an account immediately
 
---------------------------------------------------------------------------------------------------------------------------------------
-																Submission
---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+							Submission
+------------------------------------------------------------------------------------------------------------------------------
 Your submission in Expertiza should consist of the following-
 
-•	A link to your deployed application
-•	A link to a youtube video where you should explain how to verify the functionalities of your application.
-•	A link to your repository (use github.ncsu.edu to host your repository)
+â€¢	A link to your deployed application
+â€¢	A link to a youtube video where you should explain how to verify the functionalities of your application.
+â€¢	A link to your repository (use github.ncsu.edu to host your repository)
 	o	Credentials for the preconfigured admin and any other information that reviewers would find useful should be in the README.md file in this repository
 	o	Some information that reviewers may find useful are:
 		?	how to test various features (e.g., how to access certain pages, what details to enter in the form etc.)
 		?	use cases for some of the edge case scenarios (e.g., what will happen if admin tries to delete a user who currently has a transaction not checked by admin.).
+
+
