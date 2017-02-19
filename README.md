@@ -1,2 +1,2 @@
 # BankApplication
-repository for OODD Program 1
+repository for CSC517: OODD Program 1
